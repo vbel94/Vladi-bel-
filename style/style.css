@@ -1,0 +1,616 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#nav-wrap>a {
+    width: 48px;
+    height: 48px;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    border: none;
+    float: right;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    position: relative;
+    top: 0px;
+    right: 30px;
+}
+
+
+/* primary navigation */
+
+#nav-wrap ul,
+#nav-wrap li,
+#nav-wrap a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+
+/* nav-wrap */
+
+#nav-wrap {
+    font: 12px 'opensans-bold', sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000000;
+}
+
+.opaque {
+    background-color: #333;
+}
+
+
+/* hide toggle button */
+
+#nav-wrap>a.mobile-btn {
+    display: none;
+}
+
+ul#nav {
+    min-height: 48px;
+    width: auto;
+    /* center align the menu */
+    text-align: center;
+}
+
+ul#nav li {
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+}
+
+
+/* Links */
+
+ul#nav li a {
+    /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+.firstPage {
+    width: 100%;
+    min-height: 812px;
+    background-repeat: space;
+    background: url(../image/header-background.jpg);
+    background-position: center;
+}
+
+.sec {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    min-height: 312px;
+    background-position-y: 100px;
+    padding-bottom: 20px;
+    background: #282525;
+}
+
+.ellipse1 {
+    position: relative;
+    top: 10px;
+    left: 5%;
+    border: 3px solid #73AD21;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(../image/vladi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Gray 3 */
+    border: 1px solid #828282;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+    font: 12px 'opensans-bold', sans-serif;
+    text-align: center;
+    padding: 10px 0px 50px 10px;
+    font-size: 40px;
+    line-height: 78%;
+    /* or 112px */
+    color: white;
+}
+
+.expertise {
+    font: 12px 'opensans-bold', sans-serif;
+    text-align: center;
+    padding: 10px 0px 50px 10px;
+    font-size: 30px;
+    line-height: 78%;
+    /* or 112px */
+    color: tomato;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.linkin {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+}
+
+.linkin:hover {
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+.git {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.git:hover {
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+.gmail {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.gmail:hover {
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+.facebook {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.facebook:hover {
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+.whatsapp {
+    width: 30px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.whatsapp:hover {
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+
+/* sec page*/
+
+.secPage {
+    width: 100%;
+    min-height: 812px;
+    background: #112538;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img:hover {}
+
+.aboutme {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-height: 650px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    /* or 28px */
+    color: #000000;
+}
+
+p {
+    text-align: center;
+    font-family: Mate SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 78%;
+    /* or 28px */
+    letter-spacing: 0.005em;
+    text-indent: 9px;
+    color: #000000;
+}
+
+.keyboard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+}
+
+.keyboardDesktop {
+    display: none;
+}
+
+
+/*third page*/
+
+.thirdPage {
+    width: 100%;
+    min-height: 812px;
+    text-align: center;
+    background: rgb(10, 22, 32);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font: 12px 'opensans-bold', sans-serif;
+    font-size: 40px;
+    /* or 112px */
+    color: #FFFFFF;
+}
+
+.skills {
+    max-width: 20%;
+    max-height: 100px;
+}
+
+@media only screen and (min-width: 766px) {
+    .sec {
+        top: 100px;
+        width: 100%;
+        min-height: 412px;
+        background-position-y: 100px;
+        padding-bottom: 20px;
+    }
+    .name {
+        padding: 10px 0px 50px 10px;
+        font: 12px 'opensans-bold', sans-serif;
+        font-size: 90px;
+        /* or 112px */
+        color: #FFFFFF;
+    }
+    .expertise {
+        text-align: center;
+        padding: 10px 0px 50px 10px;
+        font: 12px 'opensans-bold', sans-serif;
+        font-size: 70px;
+        /* or 75px */
+    }
+    .linkin {
+        width: 60px;
+        height: 60px;
+        padding-left: 15px;
+    }
+    .git {
+        width: 60px;
+        height: 60px;
+        padding-left: 15px;
+    }
+    .gmail {
+        width: 60px;
+        height: 60px;
+        padding-left: 15px;
+    }
+    .facebook {
+        width: 60px;
+        height: 60px;
+        padding-left: 15px;
+    }
+    .whatsapp {
+        width: 60px;
+        height: 60px;
+        padding-left: 15px;
+    }
+    .ellipse1 {
+        position: relative;
+        top: 10px;
+        left: 5%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    .keyboard {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .sec {
+        top: 100px;
+        width: 100%;
+        min-height: 412px;
+        background-position-y: 100px;
+        padding-bottom: 20px;
+    }
+    .name {
+        padding: 10px 0px 50px 10px;
+        font-size: 160px;
+        /* or 112px */
+        color: #FFFFFF;
+    }
+    .expertise {
+        text-align: center;
+        padding: 10px 0px 50px 10px;
+        font: 12px 'opensans-bold', sans-serif;
+        font-size: 140px;
+        /* or 75px */
+    }
+    .linkin {
+        width: 60px;
+        height: 60px;
+        padding-left: 30px;
+    }
+    .git {
+        width: 60px;
+        height: 60px;
+        padding-left: 30px;
+    }
+    .gmail {
+        width: 60px;
+        height: 60px;
+        padding-left: 30px;
+    }
+    .facebook {
+        width: 60px;
+        height: 60px;
+        padding-left: 30px;
+    }
+    .whatsapp {
+        width: 60px;
+        height: 60px;
+        padding-left: 30px;
+    }
+    .ellipse1 {
+        position: relative;
+        top: 10px;
+        left: 5%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    /*page 2*/
+    .aboutme {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        max-height: 600px;
+        top: 100px;
+    }
+    h1 {
+        position: absolute;
+        width: 379.55px;
+        height: 181.93px;
+        left: 105px;
+        top: -30px;
+        font-size: 85px;
+    }
+    p {
+        position: relative;
+        max-width: 50%;
+        height: 450px;
+        left: 546px;
+        top: 30px;
+        text-align: center;
+        font-family: Mate SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 78%;
+        /* or 28px */
+        letter-spacing: 0.005em;
+        text-indent: 9px;
+        color: #000000;
+    }
+    .keyboard {
+        position: absolute;
+        width: 379.55px;
+        left: 105px;
+        top: 140px;
+    }
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1)
+}
+
+.progress-bar {
+    float: left;
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(219, 148, 54);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease
+}
+
+.progress-bar-striped,
+.progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px
+}
+
+.progress-bar.active,
+.progress.active .progress-bar {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite
+}
+
+.progress-bar-success {
+    background-color: #5cb85c
+}
+
+.progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+.progress-bar-info {
+    background-color: #5bc0de
+}
+
+.progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+.progress-bar-warning {
+    background-color: #f0ad4e
+}
+
+.progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+.progress-bar-danger {
+    background-color: #d9534f
+}
+
+.progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent)
+}
+
+
+/* tool tip*/
+
+.tooltip {
+    min-width: 25%;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    font-size: 10px;
+    visibility: visible;
+    opacity: 1;
+}
