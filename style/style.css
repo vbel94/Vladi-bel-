@@ -279,7 +279,7 @@ h1 {
     color: #000000;
 }
 
-p {
+.pabout {
     text-align: center;
     font-family: Mate SC;
     font-style: normal;
@@ -322,6 +322,32 @@ p {
 .skills {
     max-width: 20%;
     max-height: 100px;
+}
+
+.fourPage {
+    width: 100%;
+    min-height: 812px;
+    text-align: center;
+    background-repeat: space;
+    background-color: black;
+    color: white;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.RTitle {
+    font: 11px 'opensans-bold', caption;
+    font-size: 40px;
+    /* or 112px */
+    color: white;
+    background-color: #f82f2f;
+}
+
+.Rcon {
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    background-color: #112538;
 }
 
 @media only screen and (min-width: 766px) {
@@ -455,7 +481,7 @@ p {
         top: -30px;
         font-size: 85px;
     }
-    p {
+    .pabout {
         position: relative;
         max-width: 50%;
         height: 450px;
@@ -477,6 +503,14 @@ p {
         width: 379.55px;
         left: 105px;
         top: 140px;
+    }
+    .RTitle {
+        text-align: center;
+        font-size: 50px;
+    }
+    .Rcon {
+        font-size: 30px;
+        text-align: left;
     }
 }
 
